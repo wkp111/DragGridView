@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DragGridView</string>
+    <string name="dialog_title">频道编辑</string>
+    <string name="dialog_division">点击添加到导航条</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_40dp">40dp</dimen>
+    <dimen name="size_20sp">20sp</dimen>
+    <dimen name="height_30dp">30dp</dimen>
+</resources>

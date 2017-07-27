@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dialog_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:gravity="center"
+        android:background="@drawable/titile_bg"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_20sp"
+        android:text="@string/dialog_title"
+        />
+
+    <com.peake.draggridview.DragGridView
+        android:id="@+id/dialog_dgv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.peake.draggridview.DragGridView>
+
+    <TextView
+        android:id="@+id/dialog_tv_division"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="@string/dialog_division"
+        />
+
+    <com.peake.draggridview.DragGridView
+        android:id="@+id/dialog_dgv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.peake.draggridview.DragGridView>
+
+</LinearLayout>
