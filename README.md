@@ -2,6 +2,10 @@
 条目拖拽排序控件（主要用于新闻条目）
 <br>
 <br>
+## 效果演示图<br>
+![DragGridView](https://github.com/wkp111/DragGridView/blob/master/DragGridView.gif "演示图")
+<br>
+<br>
 ## Gradle集成<br>
 compile 'com.wkp:DragGridView:1.0.1'
 <br>
