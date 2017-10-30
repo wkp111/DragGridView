@@ -1,4 +1,4 @@
-# DragGridView
+# DragGridView [ ![Download](https://api.bintray.com/packages/wkp/maven/DragGridView/images/download.svg) ](https://bintray.com/wkp/maven/DragGridView/_latestVersion)
 条目拖拽排序控件（主要用于新闻条目）
 <br>
 <br>
@@ -7,7 +7,13 @@
 <br>
 <br>
 ## Gradle集成<br>
-compile 'com.wkp:DragGridView:1.0.1'
+```groovy
+
+dependencies{
+      compile 'com.wkp:DragGridView:1.0.1'
+}
+```
+Note：可能存在Jcenter还在审核阶段，这时会集成失败！
 <br>
 <br>
 ## 使用讲解<br>
@@ -15,10 +21,15 @@ compile 'com.wkp:DragGridView:1.0.1'
 <br>
 * DragGridView<br>
 > 布局<br>
-< com.peake.draggridview.DragGridView<br>
-    android:id="@+id/dialog_dgv_top" <br>
-    android:layout_width="match_parent" <br>
-    android:layout_height="wrap_content"/><br><br>
+```xml
+
+<com.peake.draggridview.DragGridView
+    android:id="@+id/dialog_dgv_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+```
+Note：可以直接java代码创建！
+<br><br>
 > API<br>
 1.setHasDrag 设置长按拖拽是否开启<br>
 2.setItemViews 设置控件条目<br>
@@ -49,7 +60,7 @@ compile 'com.wkp:DragGridView:1.0.1'
 10.setHeight 设置对话框高度<br>
 11.setGravity 设置对话框位置<br><br>
 > 代码示例<br>
-<code>
+```java
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -75,4 +86,31 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 }
-</code>
+```
+Note：对话框只是对DragGridView的封装，DragGridView可以单用！
+## 寄语<br/>
+控件支持直接代码创建，还有更多API请观看<a href="https://github.com/wkp111/DragGridView/blob/master/lib-draggridview/src/main/java/com/peake/draggridview/DragGridView.java">DragGridView.java</a>和<a href="https://github.com/wkp111/DragGridView/blob/master/lib-draggridview/src/main/java/com/peake/draggridview/DragSortDialog.java">DragSortDialog.java</a>内的注释说明。<br/>
+欢迎大家使用，感觉好用请给个Star鼓励一下，谢谢！<br/>
+大家如果有更好的意见或建议以及好的灵感，请邮箱作者，谢谢！<br/>
+QQ邮箱：1535514884@qq.com<br/>
+163邮箱：15889686524@163.com<br/>
+Gmail邮箱：wkp15889686524@gmail.com<br/>
+
+## 版本更新<br/>
+* v1.0.1<br/>
+新创建拖拽换位控件库<br/>
+## License
+
+   Copyright 2017 wkp
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
